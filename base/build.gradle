@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
@@ -7,13 +7,13 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.ahmed.android_mvi"
         minSdkVersion SharedConfig.minSDK
         targetSdkVersion SharedConfig.targetSDK
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
     }
 
     buildTypes {
@@ -37,6 +37,4 @@ dependencies {
     testImplementation SharedTestLibs.junit
     androidTestImplementation SharedTestLibs.junitx
     androidTestImplementation SharedTestLibs.espresso
-
-    implementation project(path: ':base')
 }
