@@ -1,2 +1,12 @@
 rootProject.name='android-mvi'
-include ':app'
+include ':app', ':base'
+
+def configureBuildFiles(ProjectDescriptor project) {
+    project.children.each {
+        child ->
+            child.buildFileName = "${child.name}.gradle"
+            configureBuildFiles(child)
+    }
+}
+
+configureBuildFiles(rootProject)
