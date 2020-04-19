@@ -1,7 +1,7 @@
 
 buildscript {
     ext.sharedScriptDir = "$rootDir/buildSrc"
-    apply from: "$sharedScriptDir/dependecies.gradle"
+    apply from: "$sharedScriptDir/dependencies.gradle"
 
     repositories {
         google()
