@@ -1,4 +1,3 @@
-
 buildscript {
     ext.sharedScriptDir = "$rootDir/buildSrc"
     apply from: "$sharedScriptDir/dependencies.gradle"
@@ -6,7 +5,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
         classpath Plugins.buildGradlePlugin
@@ -18,7 +17,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 }
 

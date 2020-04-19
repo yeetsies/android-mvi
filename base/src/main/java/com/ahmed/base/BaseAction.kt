@@ -1,3 +1,3 @@
 package com.ahmed.base
 
-interface Intent
+interface BaseAction

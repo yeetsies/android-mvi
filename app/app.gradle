@@ -31,12 +31,19 @@ dependencies {
     implementation Kotlin.core
 
     implementation Misc.appCompat
+    implementation Misc.lifecycleExtensions
+
+    implementation RX.rxJava
+    implementation RX.rxAndroid
+    implementation RX.rxKotlin
+    implementation RX.rxBinding2
 
     implementation UI.constraintLayout
 
     testImplementation SharedTestLibs.junit
+
     androidTestImplementation SharedTestLibs.junitx
     androidTestImplementation SharedTestLibs.espresso
-
     implementation project(path: ':base')
+    implementation UI.material
 }

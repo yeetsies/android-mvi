@@ -1,3 +1,3 @@
 package com.ahmed.base
 
-interface Action
+interface BaseViewState

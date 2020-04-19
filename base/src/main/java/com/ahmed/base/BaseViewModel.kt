@@ -2,7 +2,7 @@ package com.ahmed.base
 
 import io.reactivex.Observable
 
-interface ViewModel<I : Intent, S : ViewState> {
+interface BaseViewModel<I : BaseIntent, S : BaseViewState> {
     fun processIntents(intents: Observable<I>)
 
     fun states(): Observable<S>
