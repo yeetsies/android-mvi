@@ -32,6 +32,10 @@ dependencies {
 
     implementation Misc.appCompat
 
+    implementation RX.rxJava
+    implementation RX.rxAndroid
+    implementation RX.rxKotlin
+
     implementation UI.constraintLayout
 
     testImplementation SharedTestLibs.junit
